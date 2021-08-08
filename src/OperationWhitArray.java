@@ -49,4 +49,5 @@ public class OperationWhitArray {
                     }
         System.out.println("Сумма элементов массива: " + summa);
                 }
+
 }

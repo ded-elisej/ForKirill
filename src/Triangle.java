@@ -1,40 +1,38 @@
 import static java.lang.Math.*;
 
 public class Triangle extends Figures{
-    int length1 = 0;
-    int length2 = 0;
-    int angle1 = 0;
-    /*Figures triangle = new Triangle;*/
+    String name = "Triangle";
+    private int length1;
+    private int length2;
+    private int angle1;
+
     public Triangle(int length1, int length2, int angle1){
          this.length1 = length1;
          this.length2 = length2;
-        this.angle1 = angle1;
+         this.angle1 = angle1;
     }
 
     @Override
     public void square() {
         double square = 0.5 * length1 * length2 * sin(angle1);
-        System.out.println("Площадь треугольника равна " + square);
-    }
-
-    @Override
-    public void heigh() {
-        double height = (length1 * length2 * 0.5)/2;
-        System.out.println("Высота треугольника равна " + height);
+        System.out.printf("Square of %s is %f.\n",name, square);
     }
 
     @Override
     public void perimetre() {
         double perimetre = length1 + length2 + sqrt(length1 * length1 + length2 * length2 - 2 * length1 * length2 * cos(angle1));
-        System.out.println("Периметр треугольника равен " + perimetre);
+        System.out.printf("Perimetre of %s is %f.\n",name, perimetre);
     }
 
-    @Override
+    public void heigh() {
+        double height = (length1 * length2 * 0.5)/2;
+        System.out.printf("Height of %s is %f.\n",name, height);
+    }
+
     public void inform() {
-        System.out.println("Длины сторон треугольника равны " + length1 + " и " + length2);
-        System.out.println("Угол между сторонами треугольника равен: " + angle1);
+        System.out.println("Side lengths of triangle is " + length1 + " and " + length2);
+        System.out.println("Angle between sides of triangle is: " + angle1);
+        System.out.println("..............");
     }
-    public void message(){
-        System.out.println("Должен же быть метод, который принадлежит только треугольнику)");
-    }
+
 }

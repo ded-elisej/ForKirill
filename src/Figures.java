@@ -1,7 +1,9 @@
 public abstract class Figures {
+    String name;
+    public void setName(){
+        System.out.println(name);
+    }
     public abstract void square();
     public abstract void perimetre();
-    public abstract void heigh();
-    public abstract void inform();
 
 }

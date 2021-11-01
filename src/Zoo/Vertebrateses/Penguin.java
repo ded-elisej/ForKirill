@@ -9,32 +9,46 @@ public class Penguin extends Birds implements Water {
     }
 
     @Override
-    public void whoIAm() {
-        System.out.printf("I am bird %s.\n",name);
+    public String whoIAm() {
+        String inform = "I am bird penguin";
+        return inform;
     }
 
     @Override
-    public void iAmBreathing() {
-        System.out.println("I'm breath by air.");
+    public String iAmBreathing() {
+        String breath = "I'm breath by air.";
+        return breath;
     }
 
     @Override
-    public void iAmMoving() {
-        System.out.println("I move with my lower legs. Sometimes I swim.");
+    public String iAmMoving() {
+        String move = "I move with my lower legs. Sometimes I swim.";
+        return move;
     }
 
     @Override
-    public void iHaveSkeleton() {
-        System.out.println("I'm vertebrates. I have skeleton.");
+    public String iHaveSkeleton() {
+        String skeleton = "I'm vertebrates. I have skeleton.";
+        return skeleton;
     }
 
     @Override
-    public void iAmBird() {
-        System.out.println("I'm bird, but i can't fly.");
+    public String iAmBird() {
+        String type = "I'm bird, but i can't fly.";
+        return type;
     }
 
     @Override
-    public void canYouSwim() {
-        System.out.println("I can swim!");
+    public String canYouSwim() {
+        String swim = "I can swim!";
+        return swim;
+    }
+
+    public String inform(){
+        String informAboutThisAnimal = "Hi, i'm penguin. I can't fly, but I can swim perfectly. I live in Antarctica.";
+        return informAboutThisAnimal;
+    }
+    public String toString(){
+        return iHaveSkeleton() + iAmBird() + canYouSwim() + inform();
     }
 }

@@ -1,5 +1,5 @@
 package Zoo.Vertebrateses;
 
 public abstract class Reptiles extends Vertebrates {
-    public abstract void iAmReptiles();
+    public abstract String iAmReptiles();
 }

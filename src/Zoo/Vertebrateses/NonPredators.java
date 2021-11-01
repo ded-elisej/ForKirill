@@ -1,5 +1,5 @@
 package Zoo.Vertebrateses;
 
 public abstract class NonPredators extends Mammals {
-    public abstract void iAmNonPredator();
+    public abstract String iAmNonPredator();
 }

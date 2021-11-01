@@ -7,32 +7,46 @@ public class Zebra extends NonPredators {
     }
 
     @Override
-    public void whoIAm() {
-        System.out.printf("I'm vertebrates, i'm non-predator. My name is %s.\n", name);
+    public String whoIAm() {
+        String inform = "I'm vertebrates, i'm non-predator. My name is zebra.";
+        return inform;
     }
 
     @Override
-    public void iAmMoving() {
-        System.out.println("I'm moving with 4 legs.");
+    public String iAmMoving() {
+        String move = "I'm moving with 4 legs.";
+        return move;
     }
 
     @Override
-    public void iAmBreathing() {
-        System.out.println("I'm breathing by air.");
+    public String iAmBreathing() {
+        String breath = "I'm breathing by air.";
+        return breath;
     }
 
     @Override
-    public void iHaveSkeleton() {
-        System.out.println("I'm vertebrates. I have skeleton.");
+    public String iHaveSkeleton() {
+        String skeleton = "I'm vertebrates. I have skeleton.";
+        return skeleton;
     }
 
     @Override
-    public void iAmMammals() {
-        System.out.println("I'm mammals.");
+    public String iAmMammals() {
+        String type = "I'm mammals.";
+        return type;
     }
 
     @Override
-    public void iAmNonPredator() {
-        System.out.println("I eat grass. I don't hunt other animals.");
+    public String iAmNonPredator() {
+        String type2 = "I eat grass. I don't hunt other animals.";
+        return type2;
+    }
+
+    public String inform(){
+        String informAboutThisAnimal = "Hi, i'm zebra. My distinguishing feature is the striped black and white colors. I live in Africa and feed on plants.";
+        return informAboutThisAnimal;
+    }
+    public String toString(){
+        return iHaveSkeleton() + iAmMammals() + iAmNonPredator() + inform();
     }
 }

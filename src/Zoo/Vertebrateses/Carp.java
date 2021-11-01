@@ -9,27 +9,46 @@ public class Carp extends Fish implements Water {
     }
 
     @Override
-    public void whoIAm() {
-        System.out.printf("I am fish %s.\n",name);
+    public String whoIAm() {
+        String inform = "I am fish carp";
+        return inform;
     }
 
     @Override
-    public void iAmBreathing() {
-        System.out.println("I am breathing with gills.");
+    public String iAmBreathing() {
+        String breath = "I am breathing with gills.";
+        return breath;
     }
 
     @Override
-    public void iAmMoving() {
-        System.out.println("I swim in water.");
+    public String iAmMoving() {
+        String move = "I swim in water.";
+        return move;
     }
 
     @Override
-    public void iHaveSkeleton() {
-        System.out.println("I'm vertebrates. I have sceleton.");
+    public String iHaveSkeleton() {
+        String skeleton = "I'm vertebrates. I have sceleton.";
+        return skeleton;
     }
 
     @Override
-    public void canYouSwim() {
-        System.out.println("I can swim!");
+    public String iAmFish() {
+        String type = "I'm fish. I swim in water.";
+        return type;
+    }
+
+    @Override
+    public String canYouSwim() {
+        String swim = "I can swim!";
+        return swim;
+    }
+
+    public String inform(){
+        String informAboutThisAnimal = "Hi, i'm carp. I am a freshwater fish. I am very tasty, but very bony.";
+        return informAboutThisAnimal;
+    }
+    public String toString(){
+        return iHaveSkeleton() + iAmFish() + canYouSwim() + inform();
     }
 }

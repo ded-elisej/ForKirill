@@ -7,28 +7,41 @@ public class Frog extends Amphibians {
     }
 
     @Override
-    public void whoIAm() {
-        System.out.printf("I am amphibians %s.\n",name);
+    public String whoIAm() {
+        String inform = "I am amphibians frog";
+        return inform;
     }
 
     @Override
-    public void iAmBreathing() {
-        System.out.println("I'm breath by air.");
+    public String iAmBreathing() {
+        String breath = "I'm breath by air.";
+        return breath;
     }
 
     @Override
-    public void iAmMoving() {
-        System.out.println("I usually jump with my paws.");
+    public String iAmMoving() {
+        String move = "I usually jump with my paws.";
+        return move;
     }
 
     @Override
-    public void iHaveSkeleton() {
-        System.out.println("I'm vertebrates. I have skeleton.");
+    public String iHaveSkeleton() {
+        String skeleton = "I'm vertebrates. I have skeleton.";
+        return skeleton;
     }
 
     @Override
-    public void iAmAmphibians() {
-        System.out.println("Hi, i'm amphibian.");
+    public String iAmAmphibians() {
+        String type = "Hi, i'm amphibian.";
+        return type;
+    }
+
+    public String inform(){
+        String informAboutThisAnimal = "Hi, i'm frog. I usually jump and catch flies with my lingering tongue.";
+        return informAboutThisAnimal;
+    }
+    public String toString(){
+        return iHaveSkeleton() + iAmAmphibians() + inform();
     }
 }
 

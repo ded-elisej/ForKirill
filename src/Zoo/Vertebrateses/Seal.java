@@ -9,37 +9,52 @@ public class Seal extends Predators implements Water {
     }
 
     @Override
-    public void whoIAm() {
-        System.out.printf("I'm vertebrates, i'm predator. My name is %s.\n", name);
+    public String whoIAm() {
+        String inform = "I'm vertebrates, i'm predator. My name is seal";
+        return inform;
     }
 
     @Override
-    public void iAmMoving() {
-        System.out.println("I'm moving with fins and tail.");
+    public String iAmMoving() {
+        String move = "I'm moving with fins and tail.";
+        return move;
     }
 
     @Override
-    public void iAmBreathing() {
-        System.out.println("I'm breathing by air.");
+    public String iAmBreathing() {
+        String breath = "I'm breathing by air.";
+        return breath;
     }
 
     @Override
-    public void iHaveSkeleton() {
-        System.out.println("I'm vertebrates. I have skeleton.");
+    public String iHaveSkeleton() {
+        String skeleton = "I'm vertebrates. I have skeleton.";
+        return skeleton;
     }
 
     @Override
-    public void iAmMammals() {
-        System.out.println("I'm mammals.");
+    public String iAmMammals() {
+        String type = "I'm mammals.";
+        return type;
     }
 
     @Override
-    public void iAmPredator() {
-        System.out.println("I hunt other fish and animals");
+    public String iAmPredator() {
+        String type2 = "I hunt other fish and animals";
+        return type2;
     }
 
     @Override
-    public void canYouSwim() {
-        System.out.println("I can swim!");
+    public String canYouSwim() {
+        String swim = "I can swim!";
+        return swim;
+    }
+
+    public String inform(){
+        String informAboutThisAnimal = "Hi, i'm seal. We are marine predators that swim great. But we also love to bask on the shore.";
+        return informAboutThisAnimal;
+    }
+    public String toString(){
+        return iHaveSkeleton() + iAmMammals() + iAmPredator() + canYouSwim() + inform();
     }
 }

@@ -7,27 +7,40 @@ public class Snake extends Reptiles {
     }
 
     @Override
-    public void whoIAm() {
-        System.out.printf("I am reptiles %s.\n",name);
+    public String whoIAm() {
+        String inform = "I am reptiles snake.";
+        return inform;
     }
 
     @Override
-    public void iAmBreathing() {
-        System.out.println("I'm breath by air.");
+    public String iAmBreathing() {
+        String breath = "I'm breath by air.";
+        return breath;
     }
 
     @Override
-    public void iAmMoving() {
-        System.out.println("I move with my body without legs.");
+    public String iAmMoving() {
+        String move = "I move with my body without legs.";
+        return move;
     }
 
     @Override
-    public void iHaveSkeleton() {
-        System.out.println("I'm vertebrates. I have skeleton.");
+    public String iHaveSkeleton() {
+        String skeleton = "I'm vertebrates. I have skeleton.";
+        return skeleton;
     }
 
     @Override
-    public void iAmReptiles() {
-        System.out.println("Hi, i'm reptile.");
+    public String iAmReptiles() {
+        String type = "Hi, i'm reptile.";
+        return type;
+    }
+
+    public String inform(){
+        String informAboutThisAnimal = "Hi, i'm snake. I have no limbs, my sizes are very diverse. I live everywere.";
+        return informAboutThisAnimal;
+    }
+    public String toString(){
+        return iHaveSkeleton() + iAmReptiles() + inform();
     }
 }

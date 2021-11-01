@@ -9,32 +9,47 @@ public class Eagle extends Birds implements Flying {
     }
 
     @Override
-    public void whoIAm() {
-        System.out.printf("I am bird %s.\n",name);
+    public String whoIAm() {
+        String inform = "I am bird eagle.";
+        return inform;
     }
 
     @Override
-    public void iAmBreathing() {
-        System.out.println("I'm breath by air.");
+    public String iAmBreathing() {
+        String breath = "I'm breath by air.";
+        return breath;
     }
 
     @Override
-    public void iAmMoving() {
-        System.out.println("I usually fly with my wings.");
+    public String iAmMoving() {
+        String move = "I usually fly with my wings.";
+        return move;
     }
 
     @Override
-    public void iHaveSkeleton() {
-        System.out.println("I'm vertebrates. I have skeleton.");
+    public String iHaveSkeleton() {
+        String skeleton = "I'm vertebrates. I have skeleton.";
+        return skeleton;
     }
 
     @Override
-    public void iAmBird() {
-        System.out.println("I'm bird.");
+    public String iAmBird() {
+        String type = "I'm bird.";
+        return type;
     }
 
     @Override
-    public void canIFly() {
-        System.out.println("I can fly!");
+    public String canIFly() {
+        String fly = "I can fly!";
+        return fly;
+    }
+
+    public String inform(){
+        String informAboutThisAnimal = "Hi, i'm eagle. I fly great. I look better in profile than in full face.";
+        return informAboutThisAnimal;
+    }
+
+    public String toString(){
+        return iHaveSkeleton() + iAmBird() + canIFly() + inform();
     }
 }
